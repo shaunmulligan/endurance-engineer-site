@@ -5,7 +5,7 @@
 </script>
 
 <svelte:head>
-  <title>My Portfolio | {project.name}</title>
+  <title>Projects | {project.name}</title>
 </svelte:head>
 
 <div class="sm:-mx-5 md:-mx-10 lg:-mx-20 xl:-mx-38 mb-5">

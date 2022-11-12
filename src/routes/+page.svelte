@@ -8,7 +8,7 @@
 </svelte:head>
 
 <h1 class="font-bold text-center mb-20 text-5xl">
-  Welcome to my Portfolio
+  Welcome to the Endurance Engineer
 </h1>
 
 {#each data.authors as { name, intro, picture: { url } }}

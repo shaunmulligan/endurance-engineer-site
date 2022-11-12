@@ -15,12 +15,13 @@
     <a href="https://twitter.com/shaunmulligan9">
         <TwitterIcon />
     </a>
-    <a href="https://youtube.com">
+    <a href="https://www.youtube.com/channel/UCmcMzRdQbL5EHAoZSs-80UA">
         <YouTubeIcon />
     </a>
-    <a href="https://facebook.com">
+    <!-- TODO: Put LinkedIn here -->
+    <!-- <a href="https://facebook.com">
         <FacebookIcon />
-    </a>
+    </a> -->
     </div>
 </div>
 <div>

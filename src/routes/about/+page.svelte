@@ -12,7 +12,7 @@
 </script>
 
 <svelte:head>
-<title>My Portfolio project | About {name}</title>
+<title>The Endurance Engineer | About {name}</title>
 </svelte:head>
 
 <h1 class="font-bold text-center mb-20 text-5xl">About Me</h1>
