@@ -1,18 +1,15 @@
  <script>
-    import ProjectCard from "../lib/components/project-card.svelte";
+    import ProjectsGrid from "../lib/components/projects-grid.svelte";
     export let data
+    let projects = data.projects
 </script>
 
 <svelte:head>
   <title>The Endurance Engineer</title>
 </svelte:head>
 
-<h1 class="font-bold text-center mb-20 text-5xl">
-  Welcome to the Endurance Engineer
-</h1>
-
 {#each data.authors as { name, intro, picture: { url } }}
-  <div class="flex mb-40 items-end">
+  <div class="flex mb-4 items-end">
     <div class="mr-6">
       <h2 class="text-3xl mb-4 font-bold tracking-wider">{name}</h2>
       <p class="text-xl mb-4">{intro}</p>
@@ -22,10 +19,4 @@
   </div>
 {/each}
 
-<div
-  class="grid gap-10 md:grid-cols-4 md:px-10 lg:grid-cols-6 lg:-mx-52"
->
-  {#each data.projects as { name, slug, description, image }}
-    <ProjectCard {name} {description} url={image[0].url} {slug} />
-  {/each}
-</div>
+<ProjectsGrid projects={projects}></ProjectsGrid>

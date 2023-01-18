@@ -1,5 +1,6 @@
 <script>
     import ProjectCard from '$lib/components/project-card.svelte'
+    import ProjectsGrid from '$lib/components/projects-grid.svelte'
     export let data
     let projects = data.projects
 </script>
@@ -12,13 +13,4 @@
     Recent Projects by Me
 </h1>
 
-<div class="grid gap-10 md:grid-cols-4 md:px-10 lg:grid-cols-6 lg:-mx-52">
-    {#each projects as { name, slug, description, image }, index}
-        <ProjectCard
-        {name}
-        {description}
-        url={image[0].url}
-        {slug}
-        />
-    {/each}
-</div>
+<ProjectsGrid projects={projects}></ProjectsGrid>
