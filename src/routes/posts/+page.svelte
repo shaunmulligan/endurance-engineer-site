@@ -8,6 +8,7 @@
 <title>The Endurance Engineer | Blog</title>
 </svelte:head>
 
+<div class="max-w-3xl mx-auto" >
 <h1 class="text-4xl mb-10 font-extrabold">Blog posts</h1>
 
 {#each posts as { title, slug, content, coverImage, tags }}
@@ -35,3 +36,5 @@
     </div>
   </div>
 {/each}
+
+</div>
