@@ -79,3 +79,13 @@ export const postQuery = gql`
     }
   }
 `
+
+export const postsByTagQuery = gql`
+  ${POST_FRAGMENT}
+  query GetPosts($tags: [String!]) {
+    posts(where: {tags_contains_some: $tags}) {
+      slug,
+      title,
+    }
+  }
+`

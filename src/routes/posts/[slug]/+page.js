@@ -5,7 +5,6 @@ export const load = async ({ params }) => {
     const { slug } = params
     const variables = { slug }
     const { post } = await client.request(postQuery, variables)
-
     return {
         post,
     }
