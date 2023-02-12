@@ -9,13 +9,13 @@
 </svelte:head>
 
 {#each data.authors as { name, intro, picture: { url } }}
-  <div class="flex mb-4 items-end">
-    <div class="mr-6">
+  <div class="flex flex-col md:flex-row mb-4 md:items-end">
+    <div class="md:mr-6">
       <h2 class="text-3xl mb-4 font-bold tracking-wider">{name}</h2>
       <p class="text-xl mb-4">{intro}</p>
     </div>
 
-    <img class="mask mask-squircle h-48" src={url} alt={name} />
+    <img class="mask mask-squircle md:h-48 md:width-auto sm:width-full" src={url} alt={name} />
   </div>
 {/each}
 
